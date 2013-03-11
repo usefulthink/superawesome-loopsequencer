@@ -1,0 +1,36 @@
+@import "sass-bootstrap/lib/bootstrap";
+
+@import "compass/css3/images";
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
+@import "keyframes";
+
+
+.sample-container {
+  min-height: 60px;
+  padding: 10px 0;
+}
+.sample-container:nth-child(2n-1) {
+  background-color: rgba(200,200,200,0.2);
+}
+
+.btn-play {
+  width: 140px;
+  &.active { @extend .btn-success; }
+  &.waiting { @extend .btn-info; }
+}
+
+.sync-controls {
+  margin-top: 4px;
+
+  .btn { width: 70px; }
+  .active { @extend .btn-warning; }
+}
+
+.volume, .volume-display {
+  box-sizing: border-box;
+  display: inline-block; }
+
+.volume { width: 75%; }
+.volume-display { width: 20%; }
